@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <title>MAXO - Bandini Lorenzo</title>
+        <script src = "javascript/GlobalData.js"></script>
+        <script src = "javascript/loadGA.js"></script>
+    </head>
+
+    <body>
+        <div id="page">
+    		
+            <div id="header">
+            	<h1>MAXO - Bandini Lorenzo</h1>
+            </div>
+      
+            <div id="main">
+            
+            	<div class="main_top">
+                	<h1> </h1>
+                </div>
+                
+               	<div class="main_body">    
+                    <p>
+                        <div class="left">Inserisci nome file: </div><input id="inputTag" type ="text" value="cesenaGAP.json"/>
+                        <button id="button1" onclick="outputTag.value = readData(inputText.value)"> Read File </button><br><br>
+                        <div class="left">Tempo Massimo: </div><input id="maxTTag" type ="text" value="20000"/>
+                        <button id="button2" onclick="outputTag.value = doMaxo(maxTText.value)"> Maxo Go! </button><br>
+                    </p>
+                    <p>
+                        <br>
+                        <output id="outputTag" name="x">First read the file, then press Maxo Go!</output><br>
+                    </p>
+                </div>
+                
+               	<div class="main_bottom"></div>
+                
+            </div>
+            
+            <div id="footer">
+                <p>
+                    by Lorenzo Bandini
+                </p>
+            </div>
+            
+        </div>
+    </body>
+    <script application:Javascript>
+        var outputText = document.getElementById("outputTag");
+        var inputText = document.getElementById("inputTag");
+        var maxTText = document.getElementById("maxTTag");
+        var outputText = document.getElementById("outputTag");
+        </script>
+    <script src = "javascript/algoritmi.js"></script>
+</html>
